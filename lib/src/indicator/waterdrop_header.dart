@@ -137,7 +137,7 @@ class _WaterDropHeaderState extends RefreshIndicatorState<WaterDropHeader>
               width: 15.0,
             ),
             Text(
-              "刷新完成",
+              "Done",
               style: TextStyle(color: Colors.grey),
             )
           ],
@@ -151,12 +151,12 @@ class _WaterDropHeaderState extends RefreshIndicatorState<WaterDropHeader>
           children: <Widget>[
             const Icon(
               Icons.close,
-              color: Colors.grey,
+              color: Colors.red,
             ),
             Container(
               width: 15.0,
             ),
-            Text("刷新失败", style: TextStyle(color: Colors.grey))
+            Text("Failed", style: TextStyle(color: Colors.red))
           ],
         );
     } else if (mode == RefreshStatus.idle || mode == RefreshStatus.canRefresh) {
